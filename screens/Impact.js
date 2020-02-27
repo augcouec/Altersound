@@ -15,7 +15,7 @@ import {
   heightPercentageToDP as hp
 } from "react-native-responsive-screen";
 
-export default function LinksScreen() {
+export default function Impact() {
   return (
     <View style={styles.container}>
       <ScrollView
@@ -23,16 +23,17 @@ export default function LinksScreen() {
         contentContainerStyle={styles.contentContainer}
       >
         <Text style={styles.page_title}>Votre impact positif </Text>
-        <Image
+        <Text
+          name="impact"
           style={{
-            width: wp("25%"),
-            height: wp("25%"),
-            marginHorizontal: wp("37.5%"),
-            borderRadius: 10
+            fontFamily: "icomoon",
+            color: "#EF1B43",
+            fontSize: 70,
+            textAlign: "center"
           }}
-          resizeMode="cover"
-          source={require("../assets/images/Conso_img.png")}
-        />
+        >
+          b
+        </Text>
         <Text style={styles.info_text}>Vous avez consommé </Text>
         <Text style={styles.info_conso}> 1.03GO</Text>
 
@@ -70,7 +71,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontFamily: "poppins",
     fontWeight: "bold",
-    fontSize: 25,
+    fontSize: 20,
     color: "#FFF",
     marginVertical: wp("10%")
   },
@@ -85,7 +86,6 @@ const styles = StyleSheet.create({
   info_conso: {
     fontSize: 18,
     color: "#EF1B43",
-
     textAlign: "center"
   }
 });

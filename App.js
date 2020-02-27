@@ -58,19 +58,7 @@ export default function App(props) {
             <Stack.Screen
               name="altersound"
               options={{
-                headerStyle: {
-                  backgroundColor: "#141623",
-                  shadowRadius: 0,
-                  shadowOffset: {
-                    height: 0
-                  }
-                },
-                headerTintColor: "#fff",
-                headerTitleStyle: {
-                  fontWeight: "bold",
-                  fontFamily: "poppins",
-                  fontSize: 20
-                }
+                headerShown: false
               }}
               component={BottomTabNavigator}
             />

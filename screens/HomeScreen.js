@@ -17,7 +17,7 @@ import { Ionicons } from "@expo/vector-icons";
 
 import { MonoText } from "../components/StyledText";
 
-export default function HomeScreen() {
+export default function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
       <ScrollView
@@ -28,7 +28,12 @@ export default function HomeScreen() {
           Nouvelle playlists dans : 5 jours{" "}
         </Text>
 
-        <TouchableOpacity style={styles.card}>
+        <TouchableOpacity
+          style={styles.card}
+          onPress={() =>
+            navigation.navigate("Home", { screen: "PlaylistDiscover1" })
+          }
+        >
           <Image
             style={{ width: wp("20%"), height: wp("30%") }}
             resizeMode="cover"
@@ -140,7 +145,8 @@ const styles = StyleSheet.create({
     width: wp("95%"),
     height: wp("30%"),
     margin: wp("2.5%"),
-    flexDirection: "row"
+    flexDirection: "row",
+    borderRadius: 10
   },
   card_text: {
     marginHorizontal: wp("2%")

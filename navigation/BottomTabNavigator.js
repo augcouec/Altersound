@@ -1,12 +1,60 @@
 import * as React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { createStackNavigator } from "@react-navigation/stack";
 import TabBarIcon from "../components/TabBarIcon";
 import HomeScreen from "../screens/HomeScreen";
-import LinksScreen from "../screens/LinksScreen";
+import LinksScreen from "../screens/Impact";
 import PlayerScreen from "../screens/PlayerScreen";
+import PlaylistDiscover1 from "../screens/PlaylistDiscover1";
 
 const BottomTab = createBottomTabNavigator();
 const INITIAL_ROUTE_NAME = "Home";
+
+const Tab = createStackNavigator();
+function Home() {
+  return (
+    <Tab.Navigator>
+      <Tab.Screen
+        options={{
+          headerStyle: {
+            backgroundColor: "#141623",
+            shadowRadius: 0,
+            shadowOffset: {
+              height: 0
+            }
+          },
+          headerTintColor: "#fff",
+          headerTitleStyle: {
+            fontWeight: "bold",
+            fontFamily: "poppins",
+            fontSize: 20
+          }
+        }}
+        name="AlterSound"
+        component={HomeScreen}
+      />
+      <Tab.Screen
+        options={{
+          headerStyle: {
+            backgroundColor: "#141623",
+            shadowRadius: 0,
+            shadowOffset: {
+              height: 0
+            }
+          },
+          headerTintColor: "#fff",
+          headerTitleStyle: {
+            fontWeight: "bold",
+            fontFamily: "poppins",
+            fontSize: 20
+          }
+        }}
+        name="PlaylistDiscover1"
+        component={PlaylistDiscover1}
+      />
+    </Tab.Navigator>
+  );
+}
 
 export default function BottomTabNavigator({ navigation, route }) {
   return (
@@ -25,7 +73,7 @@ export default function BottomTabNavigator({ navigation, route }) {
     >
       <BottomTab.Screen
         name="Home"
-        component={HomeScreen}
+        component={Home}
         options={{
           headerStyle: {
             backgroundColor: "#f4511e"
