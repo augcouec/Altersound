@@ -21,7 +21,20 @@ export default function PlaylistDiscover1() {
       <ScrollView
         style={styles.container}
         contentContainerStyle={styles.contentContainer}
-      ></ScrollView>
+      >
+        <TouchableOpacity style={styles.cards_song}>
+          <Text style={styles.song_name}> Dj Quads - Birds And The Bees </Text>
+          <Text style={styles.song_weight}> 120 Mo </Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.cards_song}>
+          <Text style={styles.song_name}> Dj Quads - Birds And The Bees </Text>
+          <Text style={styles.song_weight}> 120 Mo </Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.cards_song}>
+          <Text style={styles.song_name}> Dj Quads - Birds And The Bees </Text>
+          <Text style={styles.song_weight}> 120 Mo </Text>
+        </TouchableOpacity>
+      </ScrollView>
     </View>
   );
 }
@@ -51,5 +64,22 @@ const styles = StyleSheet.create({
     fontSize: 18,
     color: "#EF1B43",
     textAlign: "center"
+  },
+  song_name: {
+    color: "#fff",
+    marginHorizontal: wp("5%"),
+    fontWeight: "bold"
+  },
+  song_weight: {
+    color: "#FFF",
+    marginLeft: 10,
+    fontFamily: "poppinsLight"
+  },
+  cards_song: {
+    flex: 1,
+    width: wp("95%"),
+    marginHorizontal: wp("2.5%"),
+    flexDirection: "row",
+    marginVertical: wp("3%")
   }
 });

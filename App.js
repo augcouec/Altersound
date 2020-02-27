@@ -30,6 +30,9 @@ export default function App(props) {
         await Font.loadAsync({
           ...Ionicons.font,
           poppins: require("./assets/fonts/Poppins-Medium.ttf"),
+          poppinsBold: require("./assets/fonts/Poppins-Bold.ttf"),
+          poppinsLight: require("./assets/fonts/Poppins-Light.ttf"),
+          poppinsRegular: require("./assets/fonts/Poppins-Regular.ttf"),
           icomoon: require("./assets/fonts/icomoon.ttf")
         });
       } catch (e) {
