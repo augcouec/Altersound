@@ -11,6 +11,16 @@ import PlaylistDiscover1 from "../screens/PlaylistDiscover1";
 import PlaylistDiscover2 from "../screens/PlaylistDiscover2";
 import PlaylistDiscover3 from "../screens/PlaylistDiscover3";
 import PlaylistDiscover4 from "../screens/PlaylistDiscover4";
+import PlayerScreen1 from "../screens/PlayerScreen1";
+import PlayerScreen2 from "../screens/PlayerScreen2";
+import PlayerScreen3 from "../screens/PlayerScreen3";
+import PlayerScreen4 from "../screens/PlayerScreen4";
+import PlayerScreen5 from "../screens/PlayerScreen5";
+import PlayerScreen6 from "../screens/PlayerScreen6";
+import PlayerScreen7 from "../screens/PlayerScreen7";
+import PlayerScreen8 from "../screens/PlayerScreen8";
+import PlayerScreen9 from "../screens/PlayerScreen9";
+import PlayerScreen10 from "../screens/PlayerScreen10";
 
 const BottomTab = createBottomTabNavigator();
 const INITIAL_ROUTE_NAME = "Home";
@@ -146,6 +156,196 @@ function player() {
         }}
         name="Player"
         component={PlayerScreen}
+      ></Tab.Screen>
+      <Tab.Screen
+        options={{
+          headerStyle: {
+            backgroundColor: "#141623",
+            shadowRadius: 0,
+            shadowOffset: {
+              height: 0
+            }
+          },
+          headerTintColor: "#fff",
+          headerTitleStyle: {
+            fontWeight: "bold",
+            fontFamily: "poppins",
+            fontSize: 20
+          }
+        }}
+        name="PlayerScreen1"
+        component={PlayerScreen1}
+      ></Tab.Screen>
+      <Tab.Screen
+        options={{
+          headerStyle: {
+            backgroundColor: "#141623",
+            shadowRadius: 0,
+            shadowOffset: {
+              height: 0
+            }
+          },
+          headerTintColor: "#fff",
+          headerTitleStyle: {
+            fontWeight: "bold",
+            fontFamily: "poppins",
+            fontSize: 20
+          }
+        }}
+        name="PlayerScreen2"
+        component={PlayerScreen2}
+      ></Tab.Screen>
+      <Tab.Screen
+        options={{
+          headerStyle: {
+            backgroundColor: "#141623",
+            shadowRadius: 0,
+            shadowOffset: {
+              height: 0
+            }
+          },
+          headerTintColor: "#fff",
+          headerTitleStyle: {
+            fontWeight: "bold",
+            fontFamily: "poppins",
+            fontSize: 20
+          }
+        }}
+        name="PlayerScreen3"
+        component={PlayerScreen3}
+      ></Tab.Screen>
+      <Tab.Screen
+        options={{
+          headerStyle: {
+            backgroundColor: "#141623",
+            shadowRadius: 0,
+            shadowOffset: {
+              height: 0
+            }
+          },
+          headerTintColor: "#fff",
+          headerTitleStyle: {
+            fontWeight: "bold",
+            fontFamily: "poppins",
+            fontSize: 20
+          }
+        }}
+        name="PlayerScreen4"
+        component={PlayerScreen4}
+      ></Tab.Screen>
+      <Tab.Screen
+        options={{
+          headerStyle: {
+            backgroundColor: "#141623",
+            shadowRadius: 0,
+            shadowOffset: {
+              height: 0
+            }
+          },
+          headerTintColor: "#fff",
+          headerTitleStyle: {
+            fontWeight: "bold",
+            fontFamily: "poppins",
+            fontSize: 20
+          }
+        }}
+        name="PlayerScreen5"
+        component={PlayerScreen5}
+      ></Tab.Screen>
+      <Tab.Screen
+        options={{
+          headerStyle: {
+            backgroundColor: "#141623",
+            shadowRadius: 0,
+            shadowOffset: {
+              height: 0
+            }
+          },
+          headerTintColor: "#fff",
+          headerTitleStyle: {
+            fontWeight: "bold",
+            fontFamily: "poppins",
+            fontSize: 20
+          }
+        }}
+        name="PlayerScreen6"
+        component={PlayerScreen6}
+      ></Tab.Screen>
+      <Tab.Screen
+        options={{
+          headerStyle: {
+            backgroundColor: "#141623",
+            shadowRadius: 0,
+            shadowOffset: {
+              height: 0
+            }
+          },
+          headerTintColor: "#fff",
+          headerTitleStyle: {
+            fontWeight: "bold",
+            fontFamily: "poppins",
+            fontSize: 20
+          }
+        }}
+        name="PlayerScreen7"
+        component={PlayerScreen7}
+      ></Tab.Screen>
+      <Tab.Screen
+        options={{
+          headerStyle: {
+            backgroundColor: "#141623",
+            shadowRadius: 0,
+            shadowOffset: {
+              height: 0
+            }
+          },
+          headerTintColor: "#fff",
+          headerTitleStyle: {
+            fontWeight: "bold",
+            fontFamily: "poppins",
+            fontSize: 20
+          }
+        }}
+        name="PlayerScreen8"
+        component={PlayerScreen8}
+      ></Tab.Screen>
+      <Tab.Screen
+        options={{
+          headerStyle: {
+            backgroundColor: "#141623",
+            shadowRadius: 0,
+            shadowOffset: {
+              height: 0
+            }
+          },
+          headerTintColor: "#fff",
+          headerTitleStyle: {
+            fontWeight: "bold",
+            fontFamily: "poppins",
+            fontSize: 20
+          }
+        }}
+        name="PlayerScreen9"
+        component={PlayerScreen9}
+      ></Tab.Screen>
+      <Tab.Screen
+        options={{
+          headerStyle: {
+            backgroundColor: "#141623",
+            shadowRadius: 0,
+            shadowOffset: {
+              height: 0
+            }
+          },
+          headerTintColor: "#fff",
+          headerTitleStyle: {
+            fontWeight: "bold",
+            fontFamily: "poppins",
+            fontSize: 20
+          }
+        }}
+        name="PlayerScreen10"
+        component={PlayerScreen10}
       ></Tab.Screen>
     </Tab.Navigator>
   );

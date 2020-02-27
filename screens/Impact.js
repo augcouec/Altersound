@@ -18,47 +18,42 @@ import {
 export default function Impact() {
   return (
     <View style={styles.container}>
-      <ScrollView
-        style={styles.container}
-        contentContainerStyle={styles.contentContainer}
+      <Text style={styles.page_title}>Votre impact positif </Text>
+      <Text
+        name="impact"
+        style={{
+          fontFamily: "icomoon",
+          color: "#EF1B43",
+          fontSize: 50,
+          textAlign: "center"
+        }}
       >
-        <Text style={styles.page_title}>Votre impact positif </Text>
-        <Text
-          name="impact"
-          style={{
-            fontFamily: "icomoon",
-            color: "#EF1B43",
-            fontSize: 50,
-            textAlign: "center"
-          }}
-        >
-          b
-        </Text>
-        <Text style={styles.info_text}>Vous avez consommé </Text>
-        <Text style={styles.info_conso}> 1.03GO</Text>
+        b
+      </Text>
+      <Text style={styles.info_text}>Vous avez consommé </Text>
+      <Text style={styles.info_conso}> 1.03GO</Text>
 
-        <Text style={styles.info_text}>
-          En moyenne, sur une autre pateforme de streaming musicale, vous auriez
-          consommé 1,5 Go
-        </Text>
-        <Text style={styles.info_text}>
-          Cette économie représente l’équivalent de la consommation en CO2 :
-        </Text>
-        <Text
-          name="impact"
-          style={{
-            fontFamily: "icomoon",
-            color: "#EF1B43",
-            fontSize: 120,
-            textAlign: "center"
-          }}
-        >
-          f
-        </Text>
-        <Text style={styles.info_text}>
-          d’un trajet Bordeaux - Lyon en voiture
-        </Text>
-      </ScrollView>
+      <Text style={styles.info_text}>
+        En moyenne, sur une autre pateforme de streaming musicale, vous auriez
+        consommé 1,5 Go
+      </Text>
+      <Text style={styles.info_text}>
+        Cette économie représente l’équivalent de la consommation en CO2 :
+      </Text>
+      <Text
+        name="impact"
+        style={{
+          fontFamily: "icomoon",
+          color: "#EF1B43",
+          fontSize: 120,
+          textAlign: "center"
+        }}
+      >
+        f
+      </Text>
+      <Text style={styles.info_text}>
+        d’un trajet Bordeaux - Lyon en voiture
+      </Text>
     </View>
   );
 }
@@ -66,7 +61,9 @@ export default function Impact() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#141623"
+    backgroundColor: "#141623",
+    height: hp("90%"),
+    paddingVertical: wp("10%")
   },
   page_title: {
     textAlign: "center",

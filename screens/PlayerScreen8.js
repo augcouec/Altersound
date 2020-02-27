@@ -6,16 +6,23 @@ import { useNavigation } from "@react-navigation/native";
 
 const audioBookPlaylist = [
   {
-    title: "Birds and the Bees",
-    author: "Dj Quads",
-    source: require("../assets/musique/DjQuadsBirdsAndTheBees.mp3"),
-    imageSource: "https://i.ytimg.com/vi/1fk3i2Kg3UU/hqdefault.jpg"
+    title: "Lost In The Night (feet. Pipa Moran)",
+    author: "THBD",
+    source: require("../assets/musique/THBDLostInTheNightfeatPipa Moran.mp3"),
+    imageSource:
+      "https://i.pinimg.com/564x/c9/64/e8/c964e8bcaf63705e3977db397ca39f35.jpg"
   },
   {
     title: "Art of Silence",
     author: "Uniq",
     source: require("../assets/musique/AmbientMusic.mp3"),
     imageSource: "https://i.ytimg.com/vi/3V-pYCGx0C4/maxresdefault.jpg"
+  },
+  {
+    title: "Birds and the Bees",
+    author: "Dj Quads",
+    source: require("../assets/musique/DjQuadsBirdsAndTheBees.mp3"),
+    imageSource: "https://i.ytimg.com/vi/1fk3i2Kg3UU/hqdefault.jpg"
   },
   {
     title: "Clouds",
@@ -65,13 +72,7 @@ const audioBookPlaylist = [
     imageSource:
       "https://i1.sndcdn.com/artworks-000203614410-cno4yq-t500x500.jpg"
   },
-  {
-    title: "Lost In The Night (feet. Pipa Moran)",
-    author: "THBD",
-    source: require("../assets/musique/THBDLostInTheNightfeatPipa Moran.mp3"),
-    imageSource:
-      "https://i.pinimg.com/564x/c9/64/e8/c964e8bcaf63705e3977db397ca39f35.jpg"
-  },
+
   {
     title: "If Only You Knew",
     author: "Vorsa",

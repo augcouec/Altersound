@@ -6,10 +6,11 @@ import { useNavigation } from "@react-navigation/native";
 
 const audioBookPlaylist = [
   {
-    title: "Birds and the Bees",
-    author: "Dj Quads",
-    source: require("../assets/musique/DjQuadsBirdsAndTheBees.mp3"),
-    imageSource: "https://i.ytimg.com/vi/1fk3i2Kg3UU/hqdefault.jpg"
+    title: "Clouds",
+    author: "Ehrling",
+    source: require("../assets/musique/EhrlingClouds.mp3"),
+    imageSource:
+      "https://i1.sndcdn.com/artworks-000187879360-qc2wby-t500x500.jpg"
   },
   {
     title: "Art of Silence",
@@ -18,12 +19,12 @@ const audioBookPlaylist = [
     imageSource: "https://i.ytimg.com/vi/3V-pYCGx0C4/maxresdefault.jpg"
   },
   {
-    title: "Clouds",
-    author: "Ehrling",
-    source: require("../assets/musique/EhrlingClouds.mp3"),
-    imageSource:
-      "https://i1.sndcdn.com/artworks-000187879360-qc2wby-t500x500.jpg"
+    title: "Birds and the Bees",
+    author: "Dj Quads",
+    source: require("../assets/musique/DjQuadsBirdsAndTheBees.mp3"),
+    imageSource: "https://i.ytimg.com/vi/1fk3i2Kg3UU/hqdefault.jpg"
   },
+
   {
     title: "Chill Day",
     author: "Lakey Inspired",

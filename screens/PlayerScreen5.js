@@ -6,16 +6,23 @@ import { useNavigation } from "@react-navigation/native";
 
 const audioBookPlaylist = [
   {
-    title: "Birds and the Bees",
-    author: "Dj Quads",
-    source: require("../assets/musique/DjQuadsBirdsAndTheBees.mp3"),
-    imageSource: "https://i.ytimg.com/vi/1fk3i2Kg3UU/hqdefault.jpg"
+    title: "Good For You",
+    author: "THBD",
+    source: require("../assets/musique/THBDGoodForYou.mp3"),
+    imageSource:
+      "https://i1.sndcdn.com/artworks-000203614410-cno4yq-t500x500.jpg"
   },
   {
     title: "Art of Silence",
     author: "Uniq",
     source: require("../assets/musique/AmbientMusic.mp3"),
     imageSource: "https://i.ytimg.com/vi/3V-pYCGx0C4/maxresdefault.jpg"
+  },
+  {
+    title: "Birds and the Bees",
+    author: "Dj Quads",
+    source: require("../assets/musique/DjQuadsBirdsAndTheBees.mp3"),
+    imageSource: "https://i.ytimg.com/vi/1fk3i2Kg3UU/hqdefault.jpg"
   },
   {
     title: "Clouds",
@@ -58,13 +65,7 @@ const audioBookPlaylist = [
     imageSource:
       "https://lastfm.freetls.fastly.net/i/u/ar0/d9bfb2d5ee2db0b0400a80930d5761a0.jpg"
   },
-  {
-    title: "Good For You",
-    author: "THBD",
-    source: require("../assets/musique/THBDGoodForYou.mp3"),
-    imageSource:
-      "https://i1.sndcdn.com/artworks-000203614410-cno4yq-t500x500.jpg"
-  },
+
   {
     title: "Lost In The Night (feet. Pipa Moran)",
     author: "THBD",

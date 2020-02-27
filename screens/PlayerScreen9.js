@@ -6,16 +6,23 @@ import { useNavigation } from "@react-navigation/native";
 
 const audioBookPlaylist = [
   {
-    title: "Birds and the Bees",
-    author: "Dj Quads",
-    source: require("../assets/musique/DjQuadsBirdsAndTheBees.mp3"),
-    imageSource: "https://i.ytimg.com/vi/1fk3i2Kg3UU/hqdefault.jpg"
+    title: "Embrace",
+    author: "Sappheiros",
+    source: require("../assets/musique/SappheirosEmbrace.mp3"),
+    imageSource:
+      "https://lastfm.freetls.fastly.net/i/u/ar0/d9bfb2d5ee2db0b0400a80930d5761a0.jpg"
   },
   {
     title: "Art of Silence",
     author: "Uniq",
     source: require("../assets/musique/AmbientMusic.mp3"),
     imageSource: "https://i.ytimg.com/vi/3V-pYCGx0C4/maxresdefault.jpg"
+  },
+  {
+    title: "Birds and the Bees",
+    author: "Dj Quads",
+    source: require("../assets/musique/DjQuadsBirdsAndTheBees.mp3"),
+    imageSource: "https://i.ytimg.com/vi/1fk3i2Kg3UU/hqdefault.jpg"
   },
   {
     title: "Clouds",
@@ -51,13 +58,7 @@ const audioBookPlaylist = [
     imageSource:
       "https://hypeddit-gates-prod.s3.amazonaws.com/jvewjc_coverartmanual"
   },
-  {
-    title: "Embrace",
-    author: "Sappheiros",
-    source: require("../assets/musique/SappheirosEmbrace.mp3"),
-    imageSource:
-      "https://lastfm.freetls.fastly.net/i/u/ar0/d9bfb2d5ee2db0b0400a80930d5761a0.jpg"
-  },
+
   {
     title: "Good For You",
     author: "THBD",

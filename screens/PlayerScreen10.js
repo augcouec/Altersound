@@ -6,16 +6,16 @@ import { useNavigation } from "@react-navigation/native";
 
 const audioBookPlaylist = [
   {
-    title: "Birds and the Bees",
-    author: "Dj Quads",
-    source: require("../assets/musique/DjQuadsBirdsAndTheBees.mp3"),
-    imageSource: "https://i.ytimg.com/vi/1fk3i2Kg3UU/hqdefault.jpg"
-  },
-  {
     title: "Art of Silence",
     author: "Uniq",
     source: require("../assets/musique/AmbientMusic.mp3"),
     imageSource: "https://i.ytimg.com/vi/3V-pYCGx0C4/maxresdefault.jpg"
+  },
+  {
+    title: "Birds and the Bees",
+    author: "Dj Quads",
+    source: require("../assets/musique/DjQuadsBirdsAndTheBees.mp3"),
+    imageSource: "https://i.ytimg.com/vi/1fk3i2Kg3UU/hqdefault.jpg"
   },
   {
     title: "Clouds",

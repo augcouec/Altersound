@@ -6,16 +6,23 @@ import { useNavigation } from "@react-navigation/native";
 
 const audioBookPlaylist = [
   {
-    title: "Birds and the Bees",
-    author: "Dj Quads",
-    source: require("../assets/musique/DjQuadsBirdsAndTheBees.mp3"),
-    imageSource: "https://i.ytimg.com/vi/1fk3i2Kg3UU/hqdefault.jpg"
+    title: "Lucy's Song",
+    author: "Ryan Little",
+    source: require("../assets/musique/RyanLittleLucysSong.mp3"),
+    imageSource:
+      "https://hypeddit-gates-prod.s3.amazonaws.com/jvewjc_coverartmanual"
   },
   {
     title: "Art of Silence",
     author: "Uniq",
     source: require("../assets/musique/AmbientMusic.mp3"),
     imageSource: "https://i.ytimg.com/vi/3V-pYCGx0C4/maxresdefault.jpg"
+  },
+  {
+    title: "Birds and the Bees",
+    author: "Dj Quads",
+    source: require("../assets/musique/DjQuadsBirdsAndTheBees.mp3"),
+    imageSource: "https://i.ytimg.com/vi/1fk3i2Kg3UU/hqdefault.jpg"
   },
   {
     title: "Clouds",
@@ -44,13 +51,7 @@ const audioBookPlaylist = [
     imageSource:
       "https://i1.sndcdn.com/artworks-000235890640-ni3w33-t500x500.jpg"
   },
-  {
-    title: "Lucy's Song",
-    author: "Ryan Little",
-    source: require("../assets/musique/RyanLittleLucysSong.mp3"),
-    imageSource:
-      "https://hypeddit-gates-prod.s3.amazonaws.com/jvewjc_coverartmanual"
-  },
+
   {
     title: "Embrace",
     author: "Sappheiros",

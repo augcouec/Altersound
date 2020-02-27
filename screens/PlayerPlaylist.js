@@ -16,7 +16,7 @@ import {
   heightPercentageToDP as hp
 } from "react-native-responsive-screen";
 
-export default function PlayerPlaylist() {
+export default function PlayerPlaylist({ navigation }) {
   return (
     <View style={styles.container}>
       <ScrollView
@@ -34,7 +34,18 @@ export default function PlayerPlaylist() {
         </View>
 
         <View style={styles.cards_song}>
-          <Text style={styles.song_name}> Dj Quads - Birds And The Bees </Text>
+          <TouchableOpacity>
+            <Text
+              style={styles.song_name}
+              onPress={() =>
+                navigation.navigate("player", {
+                  screen: "Player"
+                })
+              }
+            >
+              Dj Quads - Birds And The Bees{" "}
+            </Text>
+          </TouchableOpacity>
           <Text
             name="impact"
             style={{
@@ -48,7 +59,19 @@ export default function PlayerPlaylist() {
           </Text>
         </View>
         <View style={styles.cards_song}>
-          <Text style={styles.song_name}> If only you knew - Vorsa </Text>
+          <TouchableOpacity>
+            <Text
+              style={styles.song_name}
+              onPress={() =>
+                navigation.navigate("player", {
+                  screen: "PlayerScreen1"
+                })
+              }
+            >
+              {" "}
+              If only you knew - Vorsa{" "}
+            </Text>
+          </TouchableOpacity>
           <Text
             name="impact"
             style={{
@@ -62,7 +85,19 @@ export default function PlayerPlaylist() {
           </Text>
         </View>
         <View style={styles.cards_song}>
-          <Text style={styles.song_name}> Lakey inspired - Chill Day </Text>
+          <TouchableOpacity>
+            <Text
+              style={styles.song_name}
+              onPress={() =>
+                navigation.navigate("player", {
+                  screen: "PlayerScreen2"
+                })
+              }
+            >
+              {" "}
+              Lakey inspired - Chill Day{" "}
+            </Text>
+          </TouchableOpacity>
           <Text
             name="impact"
             style={{
@@ -76,7 +111,19 @@ export default function PlayerPlaylist() {
           </Text>
         </View>
         <View style={styles.cards_song}>
-          <Text style={styles.song_name}> Ehrling - Clouds </Text>
+          <TouchableOpacity>
+            <Text
+              style={styles.song_name}
+              onPress={() =>
+                navigation.navigate("player", {
+                  screen: "PlayerScreen3"
+                })
+              }
+            >
+              {" "}
+              Ehrling - Clouds{" "}
+            </Text>
+          </TouchableOpacity>
           <Text
             name="impact"
             style={{
@@ -90,7 +137,18 @@ export default function PlayerPlaylist() {
           </Text>
         </View>
         <View style={styles.cards_song}>
-          <Text style={styles.song_name}> Lucy’s song - Ryan Little </Text>
+          <TouchableOpacity>
+            <Text
+              style={styles.song_name}
+              onPress={() =>
+                navigation.navigate("player", {
+                  screen: "PlayerScreen4"
+                })
+              }
+            >
+              Lucy’s song - Ryan Little
+            </Text>
+          </TouchableOpacity>
           <Text
             name="impact"
             style={{
@@ -104,7 +162,19 @@ export default function PlayerPlaylist() {
           </Text>
         </View>
         <View style={styles.cards_song}>
-          <Text style={styles.song_name}> Good for you - THBD </Text>
+          <TouchableOpacity>
+            <Text
+              style={styles.song_name}
+              onPress={() =>
+                navigation.navigate("player", {
+                  screen: "PlayerScreen5"
+                })
+              }
+            >
+              {" "}
+              Good for you - THBD{" "}
+            </Text>
+          </TouchableOpacity>
           <Text
             name="impact"
             style={{
@@ -118,7 +188,19 @@ export default function PlayerPlaylist() {
           </Text>
         </View>
         <View style={styles.cards_song}>
-          <Text style={styles.song_name}> Infinity - Lemmino </Text>
+          <TouchableOpacity>
+            <Text
+              style={styles.song_name}
+              onPress={() =>
+                navigation.navigate("player", {
+                  screen: "PlayerScreen6"
+                })
+              }
+            >
+              {" "}
+              Infinity - Lemmino{" "}
+            </Text>
+          </TouchableOpacity>
           <Text
             name="impact"
             style={{
@@ -132,7 +214,19 @@ export default function PlayerPlaylist() {
           </Text>
         </View>
         <View style={styles.cards_song}>
-          <Text style={styles.song_name}> Wig Of Steel - S Strong </Text>
+          <TouchableOpacity>
+            <Text
+              style={styles.song_name}
+              onPress={() =>
+                navigation.navigate("player", {
+                  screen: "PlayerScreen7"
+                })
+              }
+            >
+              {" "}
+              Firmament Calm - PeriTune{" "}
+            </Text>
+          </TouchableOpacity>
           <Text
             name="impact"
             style={{
@@ -147,7 +241,18 @@ export default function PlayerPlaylist() {
         </View>
 
         <View style={styles.cards_song}>
-          <Text style={styles.song_name}> Lakey inspired - Chill Day </Text>
+          <TouchableOpacity>
+            <Text
+              style={styles.song_name}
+              onPress={() =>
+                navigation.navigate("player", {
+                  screen: "PlayerScreen8"
+                })
+              }
+            >
+              Lost In The Night (feet. Pipa Moran) - THBD
+            </Text>
+          </TouchableOpacity>
           <Text
             name="impact"
             style={{
@@ -161,7 +266,19 @@ export default function PlayerPlaylist() {
           </Text>
         </View>
         <View style={styles.cards_song}>
-          <Text style={styles.song_name}> Ehrling - Clouds </Text>
+          <TouchableOpacity>
+            <Text
+              style={styles.song_name}
+              onPress={() =>
+                navigation.navigate("player", {
+                  screen: "PlayerScreen9"
+                })
+              }
+            >
+              {" "}
+              Embrace - Sappheiros{" "}
+            </Text>
+          </TouchableOpacity>
           <Text
             name="impact"
             style={{
@@ -175,7 +292,19 @@ export default function PlayerPlaylist() {
           </Text>
         </View>
         <View style={styles.cards_song}>
-          <Text style={styles.song_name}> Lucy’s song - Ryan Little </Text>
+          <TouchableOpacity>
+            <Text
+              style={styles.song_name}
+              onPress={() =>
+                navigation.navigate("player", {
+                  screen: "PlayerScreen10"
+                })
+              }
+            >
+              {" "}
+              Art of Silence - Uniq{" "}
+            </Text>
+          </TouchableOpacity>
           <Text
             name="impact"
             style={{

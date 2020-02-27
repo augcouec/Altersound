@@ -13,135 +13,121 @@ import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp
 } from "react-native-responsive-screen";
-import { Ionicons, MaterialIcons, AntDesign } from "@expo/vector-icons";
+import { Ionicons } from "@expo/vector-icons";
 
 import { MonoText } from "../components/StyledText";
 
 export default function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
+      <Text style={styles.page_title}>Nouvelle playlists dans : 5 jours</Text>
       <ScrollView
         style={styles.container}
         contentContainerStyle={styles.contentContainer}
       >
-        <Text style={styles.page_title}>Nouvelle playlists dans : </Text>
-        <Text style={styles.page_title_countdown}>J-5 </Text>
-
-        <Text style={styles.card_title}> Chill</Text>
-
         <TouchableOpacity
           style={styles.card}
           onPress={() =>
-            navigation.navigate("Home", { screen: "PlaylistDiscover1" })
+            navigation.navigate("Home", { screen: "Playlist Chill" })
           }
         >
           <Image
-            style={styles.card_image}
+            style={{ width: wp("20%"), height: wp("30%") }}
             resizeMode="cover"
             source={require("../assets/images/Chill.png")}
           />
           <View style={styles.card_text}>
+            <Text style={styles.card_title}> Chill</Text>
+
             <Text style={styles.song_title}>
-              <B>Dj Quads</B> - Birds And The Bees{" "}
+              Dj Quads - Birds And The Bees{" "}
             </Text>
-            <Text style={styles.song_title}>
-              <B>Lemmino</B> - Infinity{" "}
-            </Text>
-            <Text style={styles.song_title}>
-              <B>Ryan Little</B> - Lucy’s Song{" "}
-            </Text>
-            <Text style={styles.song_title}>
-              <B>Lemmino</B> - Infinity{" "}
-            </Text>
+            <Text style={styles.song_title}>Lemmino - Infinity </Text>
+            <Text style={styles.song_title}>Ryan Little - Lucy’s Song </Text>
           </View>
-          <AntDesign
+          <Ionicons
             style={styles.card_icon}
-            name="download"
-            size={20}
+            name="ios-play-circle"
+            size={30}
             color="#FFF"
           />
         </TouchableOpacity>
-        <Text style={styles.card_title}> Jazz</Text>
-        <TouchableOpacity style={styles.card}>
+        <TouchableOpacity
+          style={styles.card}
+          onPress={() =>
+            navigation.navigate("Home", { screen: "Playlist Jazz" })
+          }
+        >
           <Image
-            style={styles.card_image}
+            style={{ width: wp("20%"), height: wp("30%") }}
             resizeMode="cover"
             source={require("../assets/images/Jazz.png")}
           />
           <View style={styles.card_text}>
+            <Text style={styles.card_title}> Jazz</Text>
+
             <Text style={styles.song_title}>
-              <B>Dj Quads</B> - Birds And The Bees{" "}
+              Dj Quads - Birds And The Bees{" "}
             </Text>
-            <Text style={styles.song_title}>
-              <B>Lemmino</B> - Infinity{" "}
-            </Text>
-            <Text style={styles.song_title}>
-              <B>Ryan Little</B> - Lucy’s Song{" "}
-            </Text>
-            <Text style={styles.song_title}>
-              <B>Lemmino</B> - Infinity{" "}
-            </Text>
+            <Text style={styles.song_title}>Lemmino - Infinity </Text>
+            <Text style={styles.song_title}>Ryan Little - Lucy’s Song </Text>
           </View>
-          <AntDesign
+          <Ionicons
             style={styles.card_icon}
-            name="download"
-            size={20}
+            name="ios-play-circle"
+            size={30}
             color="#FFF"
           />
         </TouchableOpacity>
-        <Text style={styles.card_title}> Rap</Text>
-        <TouchableOpacity style={styles.card}>
+        <TouchableOpacity
+          style={styles.card}
+          onPress={() =>
+            navigation.navigate("Home", { screen: "Playlist Hip-Hop" })
+          }
+        >
           <Image
-            style={styles.card_image}
+            style={{ width: wp("20%"), height: wp("30%") }}
             resizeMode="cover"
             source={require("../assets/images/RAP.png")}
           />
           <View style={styles.card_text}>
+            <Text style={styles.card_title}> Hip-Hop</Text>
+
             <Text style={styles.song_title}>
-              <B>Dj Quads</B> - Birds And The Bees{" "}
+              Dj Quads - Birds And The Bees{" "}
             </Text>
-            <Text style={styles.song_title}>
-              <B>Lemmino</B> - Infinity{" "}
-            </Text>
-            <Text style={styles.song_title}>
-              <B>Ryan Little</B> - Lucy’s Song{" "}
-            </Text>
-            <Text style={styles.song_title}>
-              <B>Lemmino</B> - Infinity{" "}
-            </Text>
+            <Text style={styles.song_title}>Lemmino - Infinity </Text>
+            <Text style={styles.song_title}>Ryan Little - Lucy’s Song </Text>
           </View>
-          <AntDesign
+          <Ionicons
             style={styles.card_icon}
-            name="download"
-            size={20}
+            name="ios-play-circle"
+            size={30}
             color="#FFF"
           />
         </TouchableOpacity>
-        <Text style={styles.card_title}> Pop</Text>
-        <TouchableOpacity style={styles.card}>
+        <TouchableOpacity
+          style={styles.card}
+          onPress={() => navigation.navigate("Home", { screen: "Playlist " })}
+        >
           <Image
-            style={styles.card_image}
+            style={{ width: wp("20%"), height: wp("30%") }}
             resizeMode="cover"
             source={require("../assets/images/POP.png")}
           />
           <View style={styles.card_text}>
+            <Text style={styles.card_title}> Rock</Text>
+
             <Text style={styles.song_title}>
-              <B>Dj Quads</B> - Birds And The Bees{" "}
+              Dj Quads - Birds And The Bees{" "}
             </Text>
-            <Text style={styles.song_title}>
-              <B>Lemmino</B> - Infinity{" "}
-            </Text>
-            <Text style={styles.song_title}>
-              <B>Ryan Little</B> - Lucy’s Song{" "}
-            </Text>
-            <Text style={styles.song_title}>
-              <B>Lemmino</B> - Infinity{" "}
-            </Text>
+            <Text style={styles.song_title}>Lemmino - Infinity </Text>
+            <Text style={styles.song_title}>Ryan Little - Lucy’s Song </Text>
           </View>
-          <AntDesign
+          <Ionicons
             style={styles.card_icon}
-            name="download"
-            size={20}
+            name="ios-play-circle"
+            size={30}
             color="#FFF"
           />
         </TouchableOpacity>
@@ -149,7 +135,7 @@ export default function HomeScreen({ navigation }) {
     </View>
   );
 }
-const B = props => <Text style={{ fontWeight: "bold" }}>{props.children}</Text>;
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -158,18 +144,10 @@ const styles = StyleSheet.create({
   page_title: {
     textAlign: "center",
     fontFamily: "poppins",
-    fontWeight: "600",
-    fontSize: 24,
-    color: "#FFF",
-    marginTop: 30
-  },
-  page_title_countdown: {
-    textAlign: "center",
-    fontFamily: "poppins",
     fontWeight: "bold",
-    fontSize: 32,
+    fontSize: 25,
     color: "#FFF",
-    marginBottom: 30
+    marginVertical: wp("10%")
   },
   card: {
     flex: 1,
@@ -181,32 +159,19 @@ const styles = StyleSheet.create({
     borderRadius: 10
   },
   card_text: {
-    marginHorizontal: wp("2%"),
-    paddingTop: 10,
-    paddingLeft: 15
+    marginHorizontal: wp("2%")
   },
   card_title: {
     fontSize: 18,
-    fontWeight: "bold",
     color: "#FFF",
-    marginTop: 10,
-    marginBottom: 3,
-    marginLeft: 5
+    marginVertical: wp("2%")
   },
   song_title: {
-    textAlign: "left",
-    fontFamily: "Helvetica Neue",
-    fontWeight: "300",
     color: "#FFF",
-    fontSize: 13,
-    lineHeight: 25
+    fontSize: 14
   },
   card_icon: {
     marginTop: wp("2%"),
-    marginLeft: wp("5%")
-  },
-  card_image: {
-    width: wp("30%"),
-    height: wp("30%")
+    marginLeft: wp("6%")
   }
 });
