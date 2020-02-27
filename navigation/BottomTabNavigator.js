@@ -21,6 +21,7 @@ import PlayerScreen7 from "../screens/PlayerScreen7";
 import PlayerScreen8 from "../screens/PlayerScreen8";
 import PlayerScreen9 from "../screens/PlayerScreen9";
 import PlayerScreen10 from "../screens/PlayerScreen10";
+import Account from "../screens/Account";
 
 const BottomTab = createBottomTabNavigator();
 const INITIAL_ROUTE_NAME = "Home";
@@ -421,7 +422,7 @@ export default function BottomTabNavigator({ navigation, route }) {
       />
       <BottomTab.Screen
         name="Account"
-        component={LinksScreen}
+        component={Account}
         options={{
           title: "Account",
           tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="d" />
