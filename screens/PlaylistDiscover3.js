@@ -25,10 +25,10 @@ export default function PlaylistDiscover1() {
       >
         <Image
           style={styles.albumCover}
-          source={require("../assets/images/Chill.png")}
+          source={require("../assets/images/RAP.png")}
         />
 
-        <Text style={styles.playlist_name}> Chill </Text>
+        <Text style={styles.playlist_name}> Hip-Hop </Text>
         <Text style={styles.playlist_size}> 70 Titres - 240 Mo </Text>
 
         <TouchableOpacity

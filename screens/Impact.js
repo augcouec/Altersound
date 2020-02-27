@@ -28,7 +28,7 @@ export default function Impact() {
           style={{
             fontFamily: "icomoon",
             color: "#EF1B43",
-            fontSize: 70,
+            fontSize: 50,
             textAlign: "center"
           }}
         >
@@ -44,16 +44,17 @@ export default function Impact() {
         <Text style={styles.info_text}>
           Cette économie représente l’équivalent de la consommation en CO2 :
         </Text>
-        <Image
+        <Text
+          name="impact"
           style={{
-            width: wp("25%"),
-            height: wp("25%"),
-            marginHorizontal: wp("37.5%"),
-            borderRadius: 10
+            fontFamily: "icomoon",
+            color: "#EF1B43",
+            fontSize: 120,
+            textAlign: "center"
           }}
-          resizeMode="cover"
-          source={require("../assets/images/Conso_img.png")}
-        />
+        >
+          f
+        </Text>
         <Text style={styles.info_text}>
           d’un trajet Bordeaux - Lyon en voiture
         </Text>

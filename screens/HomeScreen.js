@@ -20,18 +20,15 @@ import { MonoText } from "../components/StyledText";
 export default function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
+      <Text style={styles.page_title}>Nouvelle playlists dans : 5 jours</Text>
       <ScrollView
         style={styles.container}
         contentContainerStyle={styles.contentContainer}
       >
-        <Text style={styles.page_title}>
-          Nouvelle playlists dans : 5 jours{" "}
-        </Text>
-
         <TouchableOpacity
           style={styles.card}
           onPress={() =>
-            navigation.navigate("Home", { screen: "PlaylistDiscover1" })
+            navigation.navigate("Home", { screen: "Playlist Chill" })
           }
         >
           <Image
@@ -55,7 +52,12 @@ export default function HomeScreen({ navigation }) {
             color="#FFF"
           />
         </TouchableOpacity>
-        <TouchableOpacity style={styles.card}>
+        <TouchableOpacity
+          style={styles.card}
+          onPress={() =>
+            navigation.navigate("Home", { screen: "Playlist Jazz" })
+          }
+        >
           <Image
             style={{ width: wp("20%"), height: wp("30%") }}
             resizeMode="cover"
@@ -77,7 +79,12 @@ export default function HomeScreen({ navigation }) {
             color="#FFF"
           />
         </TouchableOpacity>
-        <TouchableOpacity style={styles.card}>
+        <TouchableOpacity
+          style={styles.card}
+          onPress={() =>
+            navigation.navigate("Home", { screen: "Playlist Hip-Hop" })
+          }
+        >
           <Image
             style={{ width: wp("20%"), height: wp("30%") }}
             resizeMode="cover"
@@ -99,7 +106,12 @@ export default function HomeScreen({ navigation }) {
             color="#FFF"
           />
         </TouchableOpacity>
-        <TouchableOpacity style={styles.card}>
+        <TouchableOpacity
+          style={styles.card}
+          onPress={() =>
+            navigation.navigate("Home", { screen: "Playlist Rock" })
+          }
+        >
           <Image
             style={{ width: wp("20%"), height: wp("30%") }}
             resizeMode="cover"
