@@ -11,6 +11,7 @@ import PlaylistDiscover1 from "../screens/PlaylistDiscover1";
 import PlaylistDiscover2 from "../screens/PlaylistDiscover2";
 import PlaylistDiscover3 from "../screens/PlaylistDiscover3";
 import PlaylistDiscover4 from "../screens/PlaylistDiscover4";
+import Account from "../screens/Account";
 
 const BottomTab = createBottomTabNavigator();
 const INITIAL_ROUTE_NAME = "Home";
@@ -221,7 +222,7 @@ export default function BottomTabNavigator({ navigation, route }) {
       />
       <BottomTab.Screen
         name="Account"
-        component={LinksScreen}
+        component={Account}
         options={{
           title: "Account",
           tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="d" />
