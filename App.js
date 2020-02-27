@@ -29,7 +29,8 @@ export default function App(props) {
         // Load fonts
         await Font.loadAsync({
           ...Ionicons.font,
-          "space-mono": require("./assets/fonts/SpaceMono-Regular.ttf")
+          poppins: require("./assets/fonts/Poppins-Medium.ttf"),
+          icomoon: require("./assets/fonts/icomoon.ttf")
         });
       } catch (e) {
         // We might want to provide this error information to an error reporting service
@@ -54,7 +55,25 @@ export default function App(props) {
           initialState={initialNavigationState}
         >
           <Stack.Navigator>
-            <Stack.Screen name="Root" component={BottomTabNavigator} />
+            <Stack.Screen
+              name="altersound"
+              options={{
+                headerStyle: {
+                  backgroundColor: "#141623",
+                  shadowRadius: 0,
+                  shadowOffset: {
+                    height: 0
+                  }
+                },
+                headerTintColor: "#fff",
+                headerTitleStyle: {
+                  fontWeight: "bold",
+                  fontFamily: "poppins",
+                  fontSize: 20
+                }
+              }}
+              component={BottomTabNavigator}
+            />
           </Stack.Navigator>
         </NavigationContainer>
       </View>

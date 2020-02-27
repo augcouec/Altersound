@@ -12,8 +12,14 @@ export default function BottomTabNavigator({ navigation, route }) {
   return (
     <BottomTab.Navigator
       tabBarOptions={{
-        activeBackgroundColor: "#1D1D1D",
-        inactiveBackgroundColor: "#1D1D1D"
+        activeBackgroundColor: "#222534",
+        inactiveBackgroundColor: "#222534",
+        activeTintColor: "#EF1B43",
+        inactiveTintColor: "#FFF",
+        showLabel: false,
+        style: {
+          borderTopWidth: 0
+        }
       }}
       initialRouteName={INITIAL_ROUTE_NAME}
     >
@@ -21,40 +27,39 @@ export default function BottomTabNavigator({ navigation, route }) {
         name="Home"
         component={HomeScreen}
         options={{
+          headerStyle: {
+            backgroundColor: "#f4511e"
+          },
+          headerTintColor: "#fff",
+          headerTitleStyle: {
+            fontWeight: "bold"
+          },
           title: "Home",
-          tabBarIcon: ({ focused }) => (
-            <TabBarIcon focused={focused} name="md-home" />
-          )
+          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="c" />
         }}
       />
       <BottomTab.Screen
-        name="consomation"
+        name="Consomation"
         component={LinksScreen}
         options={{
-          title: "consomation",
-          tabBarIcon: ({ focused }) => (
-            <TabBarIcon focused={focused} name="md-book" />
-          )
+          title: "Consomation",
+          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="b" />
         }}
       />
       <BottomTab.Screen
-        name="account"
+        name="Account"
         component={LinksScreen}
         options={{
-          title: "account",
-          tabBarIcon: ({ focused }) => (
-            <TabBarIcon focused={focused} name="md-settings" />
-          )
+          title: "Account",
+          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="d" />
         }}
       />
       <BottomTab.Screen
         name="player"
         component={PlayerScreen}
         options={{
-          title: "player",
-          tabBarIcon: ({ focused }) => (
-            <TabBarIcon focused={focused} name="md-play" />
-          )
+          title: "Player",
+          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="a" />
         }}
       />
     </BottomTab.Navigator>

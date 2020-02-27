@@ -198,7 +198,11 @@ export default class App extends React.Component {
             style={styles.control}
             onPress={this.handlePreviousTrack}
           >
-            <Ionicons name="ios-skip-backward" size={48} color="#FFF" />
+            <Ionicons
+              name="caret-forward-circle-outline"
+              size={48}
+              color="#FFF"
+            />
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.control}
