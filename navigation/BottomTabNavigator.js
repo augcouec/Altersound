@@ -141,6 +141,7 @@ function player() {
       ></Tab.Screen>
       <Tab.Screen
         options={{
+          title: "",
           headerStyle: {
             backgroundColor: "#141623",
             shadowRadius: 0,
@@ -160,6 +161,7 @@ function player() {
       ></Tab.Screen>
       <Tab.Screen
         options={{
+          title: "",
           headerStyle: {
             backgroundColor: "#141623",
             shadowRadius: 0,
@@ -179,6 +181,7 @@ function player() {
       ></Tab.Screen>
       <Tab.Screen
         options={{
+          title: "",
           headerStyle: {
             backgroundColor: "#141623",
             shadowRadius: 0,
@@ -198,6 +201,7 @@ function player() {
       ></Tab.Screen>
       <Tab.Screen
         options={{
+          title: "",
           headerStyle: {
             backgroundColor: "#141623",
             shadowRadius: 0,
@@ -217,6 +221,7 @@ function player() {
       ></Tab.Screen>
       <Tab.Screen
         options={{
+          title: "",
           headerStyle: {
             backgroundColor: "#141623",
             shadowRadius: 0,
@@ -236,6 +241,7 @@ function player() {
       ></Tab.Screen>
       <Tab.Screen
         options={{
+          title: "",
           headerStyle: {
             backgroundColor: "#141623",
             shadowRadius: 0,
@@ -255,6 +261,7 @@ function player() {
       ></Tab.Screen>
       <Tab.Screen
         options={{
+          title: "",
           headerStyle: {
             backgroundColor: "#141623",
             shadowRadius: 0,
@@ -274,6 +281,7 @@ function player() {
       ></Tab.Screen>
       <Tab.Screen
         options={{
+          title: "",
           headerStyle: {
             backgroundColor: "#141623",
             shadowRadius: 0,
@@ -293,6 +301,7 @@ function player() {
       ></Tab.Screen>
       <Tab.Screen
         options={{
+          title: "",
           headerStyle: {
             backgroundColor: "#141623",
             shadowRadius: 0,
@@ -312,6 +321,7 @@ function player() {
       ></Tab.Screen>
       <Tab.Screen
         options={{
+          title: "",
           headerStyle: {
             backgroundColor: "#141623",
             shadowRadius: 0,
@@ -331,6 +341,7 @@ function player() {
       ></Tab.Screen>
       <Tab.Screen
         options={{
+          title: "",
           headerStyle: {
             backgroundColor: "#141623",
             shadowRadius: 0,

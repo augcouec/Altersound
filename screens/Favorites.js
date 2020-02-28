@@ -29,94 +29,47 @@ export default function Favorites() {
           <Image
             style={{ width: wp("10%"), height: wp("10%") }}
             resizeMode="cover"
-            source={require("../assets/images/Jazz.png")}
+            source={require("../assets/images/Chill.png")}
           />
-          <Text style={styles.song_name}> Dj Quads - Birds And The Bees </Text>
+          <Text style={styles.song_title}>
+            <B>Dj Quads</B> - Birds And The Bees{" "}
+          </Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.cards_song}>
           <Image
             style={{ width: wp("10%"), height: wp("10%") }}
             resizeMode="cover"
-            source={require("../assets/images/Jazz.png")}
+            source={require("../assets/images/Jazz-B.jpg")}
           />
-          <Text style={styles.song_name}> Dj Quads - Birds And The Bees </Text>
+          <Text style={styles.song_title}>
+            <B>Lemmino</B> - Infinity{" "}
+          </Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.cards_song}>
           <Image
             style={{ width: wp("10%"), height: wp("10%") }}
             resizeMode="cover"
-            source={require("../assets/images/Jazz.png")}
+            source={require("../assets/images/POP.png")}
           />
-          <Text style={styles.song_name}> Dj Quads - Birds And The Bees </Text>
+          <Text style={styles.song_title}>
+            <B>Ryan Little</B> - Lucy’s Song{" "}
+          </Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.cards_song}>
           <Image
             style={{ width: wp("10%"), height: wp("10%") }}
             resizeMode="cover"
-            source={require("../assets/images/Jazz.png")}
+            source={require("../assets/images/RAP.png")}
           />
-          <Text style={styles.song_name}> Dj Quads - Birds And The Bees </Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.cards_song}>
-          <Image
-            style={{ width: wp("10%"), height: wp("10%") }}
-            resizeMode="cover"
-            source={require("../assets/images/Jazz.png")}
-          />
-          <Text style={styles.song_name}> Dj Quads - Birds And The Bees </Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.cards_song}>
-          <Image
-            style={{ width: wp("10%"), height: wp("10%") }}
-            resizeMode="cover"
-            source={require("../assets/images/Jazz.png")}
-          />
-          <Text style={styles.song_name}> Dj Quads - Birds And The Bees </Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.cards_song}>
-          <Image
-            style={{ width: wp("10%"), height: wp("10%") }}
-            resizeMode="cover"
-            source={require("../assets/images/Jazz.png")}
-          />
-          <Text style={styles.song_name}> Dj Quads - Birds And The Bees </Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.cards_song}>
-          <Image
-            style={{ width: wp("10%"), height: wp("10%") }}
-            resizeMode="cover"
-            source={require("../assets/images/Jazz.png")}
-          />
-          <Text style={styles.song_name}> Dj Quads - Birds And The Bees </Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.cards_song}>
-          <Image
-            style={{ width: wp("10%"), height: wp("10%") }}
-            resizeMode="cover"
-            source={require("../assets/images/Jazz.png")}
-          />
-          <Text style={styles.song_name}> Dj Quads - Birds And The Bees </Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.cards_song}>
-          <Image
-            style={{ width: wp("10%"), height: wp("10%") }}
-            resizeMode="cover"
-            source={require("../assets/images/Jazz.png")}
-          />
-          <Text style={styles.song_name}> Dj Quads - Birds And The Bees </Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.cards_song}>
-          <Image
-            style={{ width: wp("10%"), height: wp("10%") }}
-            resizeMode="cover"
-            source={require("../assets/images/Jazz.png")}
-          />
-          <Text style={styles.song_name}> Dj Quads - Birds And The Bees </Text>
+          <Text style={styles.song_title}>
+            <B>Lemmino</B> - Infinity
+          </Text>
         </TouchableOpacity>
       </ScrollView>
     </View>
   );
 }
+const B = props => <Text style={{ fontWeight: "bold" }}>{props.children}</Text>;
 
 const styles = StyleSheet.create({
   container: {
@@ -140,10 +93,9 @@ const styles = StyleSheet.create({
     marginHorizontal: wp("2.5%")
   },
 
-  song_name: {
+  song_title: {
     color: "#fff",
-    marginHorizontal: wp("5%"),
-    fontWeight: "bold"
+    marginHorizontal: wp("5%")
   },
 
   cards_song: {
@@ -152,7 +104,7 @@ const styles = StyleSheet.create({
     marginHorizontal: wp("2.5%"),
     flexDirection: "row",
     marginVertical: wp("3%"),
-    justifyContent: "center",
+    justifyContent: "flex-start",
     alignItems: "center"
   }
 });

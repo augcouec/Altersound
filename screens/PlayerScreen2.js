@@ -3,7 +3,10 @@ import { StyleSheet, TouchableOpacity, View, Image, Text } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { Audio } from "expo-av";
 import { useNavigation } from "@react-navigation/native";
-
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp
+} from "react-native-responsive-screen";
 const audioBookPlaylist = [
   {
     title: "Chill Day",
@@ -193,12 +196,23 @@ export default class App extends React.Component {
             uri: "https://m.media-amazon.com/images/I/91pR-YHwP5L._SS500_.jpg"
           }}
         />
+        {this.renderFileInfo()}
         <View style={styles.controls}>
           <TouchableOpacity
             style={styles.control}
             onPress={this.handlePreviousTrack}
           >
-            <Ionicons name="ios-skip-backward" size={48} color="#FFF" />
+            <Text
+              name="impact"
+              style={{
+                fontFamily: "icomoon",
+                color: "#FFF",
+                fontSize: 30,
+                textAlign: "center"
+              }}
+            >
+              j
+            </Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.control}
@@ -207,17 +221,37 @@ export default class App extends React.Component {
             {this.state.isPlaying ? (
               <Ionicons name="ios-pause" size={48} color="#FFF" />
             ) : (
-              <Ionicons name="ios-play-circle" size={48} color="#FFF" />
+              <Text
+                name="impact"
+                style={{
+                  fontFamily: "icomoon",
+                  color: "#FFF",
+                  fontSize: 60,
+                  textAlign: "center"
+                }}
+              >
+                h
+              </Text>
             )}
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.control}
             onPress={this.handleNextTrack}
           >
-            <Ionicons name="ios-skip-forward" size={48} color="#FFF" />
+            <Text
+              name="impact"
+              style={{
+                fontFamily: "icomoon",
+                color: "#FFF",
+                fontSize: 30,
+                textAlign: "center"
+              }}
+            >
+              i
+            </Text>
           </TouchableOpacity>
         </View>
-        {this.renderFileInfo()}
+        <Text style={styles.info_text}>Cette musqiue pèse 3,5Mo</Text>
       </View>
     );
   }
@@ -254,6 +288,16 @@ const styles = StyleSheet.create({
     margin: 20
   },
   controls: {
-    flexDirection: "row"
+    flex: 1,
+    flexDirection: "row",
+    alignItems: "center"
+  },
+  info_text: {
+    fontSize: 16,
+    color: "#FFF",
+    marginBottom: wp("2%"),
+    textAlign: "center",
+    marginTop: wp("10%"),
+    marginHorizontal: wp("10%")
   }
 });

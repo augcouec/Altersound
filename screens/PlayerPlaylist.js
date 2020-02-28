@@ -19,15 +19,15 @@ import {
 export default function PlayerPlaylist({ navigation }) {
   return (
     <View style={styles.container}>
+      <Image
+        style={styles.albumCoverHeader}
+        source={require("../assets/images/Chill-B.jpg")}
+        contain="cover"
+      />
       <ScrollView
         style={styles.container}
         contentContainerStyle={styles.contentContainer}
       >
-        <Image
-          style={styles.albumCoverHeader}
-          source={require("../assets/images/Chill-B.jpg")}
-          contain="cover"
-        />
         <View style={styles.header_container}>
           <Text style={styles.playlist_name}> Chill </Text>
           <Text style={styles.playlist_size}> 70 Titres - 240 Mo </Text>
@@ -43,7 +43,7 @@ export default function PlayerPlaylist({ navigation }) {
                 })
               }
             >
-              Dj Quads - Birds And The Bees{" "}
+              <B>Birds And The Bees</B> - Dj Quads
             </Text>
           </TouchableOpacity>
           <Text
@@ -69,7 +69,7 @@ export default function PlayerPlaylist({ navigation }) {
               }
             >
               {" "}
-              If only you knew - Vorsa{" "}
+              <B>If only you knew</B> - Vorsa{" "}
             </Text>
           </TouchableOpacity>
           <Text
@@ -95,7 +95,7 @@ export default function PlayerPlaylist({ navigation }) {
               }
             >
               {" "}
-              Lakey inspired - Chill Day{" "}
+              <B>Lakey inspired</B> - Chill Day{" "}
             </Text>
           </TouchableOpacity>
           <Text
@@ -121,7 +121,7 @@ export default function PlayerPlaylist({ navigation }) {
               }
             >
               {" "}
-              Ehrling - Clouds{" "}
+              <B>Ehrling</B> - Clouds{" "}
             </Text>
           </TouchableOpacity>
           <Text
@@ -146,7 +146,7 @@ export default function PlayerPlaylist({ navigation }) {
                 })
               }
             >
-              Lucy’s song - Ryan Little
+              <B>Lucy’s song</B> - Ryan Little
             </Text>
           </TouchableOpacity>
           <Text
@@ -172,7 +172,7 @@ export default function PlayerPlaylist({ navigation }) {
               }
             >
               {" "}
-              Good for you - THBD{" "}
+              <B>Good for you</B> - THBD{" "}
             </Text>
           </TouchableOpacity>
           <Text
@@ -198,7 +198,7 @@ export default function PlayerPlaylist({ navigation }) {
               }
             >
               {" "}
-              Infinity - Lemmino{" "}
+              <B>Infinity</B> - Lemmino{" "}
             </Text>
           </TouchableOpacity>
           <Text
@@ -224,7 +224,7 @@ export default function PlayerPlaylist({ navigation }) {
               }
             >
               {" "}
-              Firmament Calm - PeriTune{" "}
+              <B>Firmament Calm</B> - PeriTune{" "}
             </Text>
           </TouchableOpacity>
           <Text
@@ -250,7 +250,7 @@ export default function PlayerPlaylist({ navigation }) {
                 })
               }
             >
-              Lost In The Night (feet. Pipa Moran) - THBD
+              <B>Lost In The Night (feet. Pipa Moran)</B> - THBD
             </Text>
           </TouchableOpacity>
           <Text
@@ -275,8 +275,7 @@ export default function PlayerPlaylist({ navigation }) {
                 })
               }
             >
-              {" "}
-              Embrace - Sappheiros{" "}
+              <B>Embrace</B> - Sappheiros
             </Text>
           </TouchableOpacity>
           <Text
@@ -301,8 +300,7 @@ export default function PlayerPlaylist({ navigation }) {
                 })
               }
             >
-              {" "}
-              Art of Silence - Uniq{" "}
+              <B>Art of Silence</B> - Uniq
             </Text>
           </TouchableOpacity>
           <Text
@@ -321,6 +319,7 @@ export default function PlayerPlaylist({ navigation }) {
     </View>
   );
 }
+const B = props => <Text style={{ fontWeight: "bold" }}>{props.children}</Text>;
 
 const styles = StyleSheet.create({
   container: {
@@ -351,8 +350,7 @@ const styles = StyleSheet.create({
   },
   song_name: {
     color: "#fff",
-    marginRight: wp("5%"),
-    fontWeight: "bold"
+    marginRight: wp("5%")
   },
   song_weight: {
     color: "#FFF",
@@ -372,7 +370,7 @@ const styles = StyleSheet.create({
   },
   albumCoverHeader: {
     width: wp("100%"),
-    height: wp("80%"),
+    height: wp("60%"),
     marginRight: "auto",
     marginBottom: 10,
     marginLeft: "auto"
